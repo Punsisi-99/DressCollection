@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a940688ba9.js" crossorigin="anonymous"></script>
+        <title>Kids_Collection</title>
+
+        <style>
+            nav ul{
+                list-style-type: none;
+                background-color: rgba(252, 216, 175, 0.7);
+                margin: 0;
+                padding: 5px;
+                display: block;
+                border-radius: 0 0 15px 15px;
+                height: 150px;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+                justify-content: space-between;
+            }
+            nav ul li{
+                display: inline-block;
+                padding: px;
+                align-items: center;
+            }
+            nav ul li h1{
+                color: rgb(105, 3, 3);
+                font-style: italic;
+                padding: 20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            nav ul li h1::first-letter{
+                font-size: 70px;
+                font-weight: 900;
+                font-style: italic;
+                font-family: fantasy;
+                padding: 10px 5px 5px 5px;
+                float: left;
+                line-height: 15px;
+            }
+            .icon{
+                display: inline-block;
+                align-items: center;
+                background-color: rgba(255, 252, 245, 0.904);
+                width: 250px; 
+                border-radius: 30px;
+                border: rgb(173, 59, 59);
+                padding: 5px ;
+                margin-left: 00px;
+            }
+            nav ul li input{
+                padding: 5px;
+                border: none;
+                outline: none;
+                background: none;
+                font-size: medium;
+            }
+            nav ul li button{
+                padding: 5px;
+                border: none;
+                outline: none;
+                background: none; 
+                color: black;
+            }
+            .acc{
+                align-items: right;
+                padding: 5px;
+                margin-left: 600px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: rgb(5, 75, 42);
+                font-size: 20px;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            nav ul li a:hover{
+                color: rgb(17, 170, 216);
+            }
+            .items{
+                list-style: none;
+                background-color: rgba(252, 216, 175, 0.4);
+                border-radius: 0 0 15px 15px;
+                margin-top: 0;
+                display: flex;
+                height: 60px;
+            }
+            .items li a{
+                justify-content: space-between;
+                color: rgb(1, 54, 34);
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+            }
+            .items li a:hover{
+                color: rgb(17, 170, 216);
+                background-color: rgb(2, 2, 2);
+            }
+            .home{
+                margin-left:600px;
+            }
+            .dress{
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                height: 100hv;
+                align-items: center;
+            }
+            .card{
+                height: 400px;
+                margin: 50px;
+                box-shadow: 5px 5px 20px black;
+                overflow: hidden;
+            }
+            img{
+                height: 400px;
+                width: 260px;
+            }
+            .intro{
+                padding: 5px;
+                box-sizing: border-box;
+                height: 70px;
+                width: 235px;
+                position: absolute;
+                background: rgba(27, 27, 27, 0.5);
+                color: white;
+                bottom: -30px;
+            }
+            h2{
+                margin: 10px;
+            }
+            .card:hover{
+                cursor: pointer;
+                padding-inline: 5px;
+            }
+            table{
+                align-items: center;
+                width: 40%;
+                margin-left: 400px; 
+            }
+            table,tr,th,td{
+                border: 2px solid black;
+            }
+            footer ul{
+                background-color: rgba(43,38,99, 0.9);
+                border-radius: 20px 20px 0 0;
+                justify-content: space-between;
+                display: flex;
+                padding: 10px;
+                height: auto;
+            }
+            footer ul h2{
+                justify-content: space-between;
+                width: fit-content;
+                position: relative;
+                margin-left: 40px;
+                color: white;
+                align-content: flex-start;
+            }
+            .footer1{
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 150px;
+                flex-direction: column;
+                letter-spacing: 0.5px;
+            }
+            .footer2{
+                width: 100%;
+                height: auto;
+                margin-top: 0px;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 250px;
+                margin-top: 0;
+                letter-spacing: 0.5px;
+            }
+            footer ul li{
+                list-style: none;
+                display: flex;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 200;
+                color: white;
+                padding: 10px;
+            }
+            footer ul li a{
+                text-decoration: none;
+                color: white;
+                transition: all 0.3s ease;
+            }
+            footer li a:hover{
+	            padding-left: 10px;
+            }
+            .links{
+                display: flex;
+                margin-left: 10px;
+            }
+            .links li i{
+                width: 30px;
+                display: block;
+                font-size: 40px;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            .links .fb li :hover i{ 
+	            color:#ffff;
+	            background-color: #3b8ff0;
+	            border-radius: 60%;
+	            transform: scale(0.9);
+            }
+            .links .inst li :hover i{
+	            color:#ffff;
+	            background: linear-gradient(#2b14ff, #ff3b65, #d4b421);
+	            border-radius: 60%;
+	            transform: scale(0.9);
+            }
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <nav>
+                <ul>
+                    <li><h1>Dhammi<br>ress Collection</h1></li>
+    
+                    <li class="icon"><input type="text" placeholder="Search anything here..">
+    
+                    <button class="" type="submit"><i class="fas fa-search"></i></button></li>
+    
+                    <li class="acc"><a onmouseover="popupAlert('Sign in from here')" href="#">Sign In <i class="far fa-id-card"></i></a> /
+                        <a onmouseover="popupAlert('Log in from here')" href="#">Log In <i class="fas fa-sign-in-alt"></i></a></li>
+                    </ul>
+                </nav>
+                <ul class="items">
+                    <li><a href="../dress_collection/mens.html"> Mens' collection</a></li>
+                    <li><a href="../dress_collection/womens.html"> Womens' collection</a></li>
+                    <li><a href="../dress_collection/kids.html">Kids' collection</a></li>
+                    <li class="home"><a href="../dress_collection/index.html">Home</a></li>
+                </ul>
+        </header>
+
+        <dev class="dress">
+            <dev class="card">
+                <img src="828d981da40a6a032f3af68563924401.jpg" alt="Frock-Casual">
+                <dev class="intro">
+                    <h2>Frock-Casual</h2>
+                </dev>
+            </dev>
+            <dev class="card">
+                <img src="2022-Formal-Newborn-Clothes-1st-Birthday-Christening-Dress-For-Baby-Girl-Dresses-Beading-Party-Princess-Girls.jpg_Q90.jpg_.webp" alt="Frock-Prince">
+                <dev class="intro">
+                    <h2>Frock-Prince</h2>
+                </dev>
+            </dev>
+            <dev class="card">
+                <img src="5289_2.jpg" alt="Casual-Wear">
+                <dev class="intro">
+                    <h2>Casual-Wear</h2>
+                </dev>
+            </dev>
+            <dev class="card">
+                <img src="5317_7.jpg" alt="Short with T-Shirt">
+                <dev class="intro">
+                    <h2>Short with T-Shirt</h2>
+                </dev>
+            </dev>
+        </dev>
+        <table>
+            <tr>
+                <th>Iteam</th>
+                <th>Price(LKR.)</th>
+            </tr>
+            <tr>
+                <td>Frock-Casual</td>
+                <td>3600.00</td>
+            </tr>
+            <tr>
+                <td>Frock-Prince</td>
+                <td>6980.00</td>
+            </tr>
+            <tr>
+                <td>Casual-Wear</td>
+                <td>2300.00</td>
+            </tr>
+            <tr>
+                <td>Short with T-Shirt</td>
+                <td>1600.00 + 2100.00</td>
+            </tr>
+        </table>
+
+        <!--footer-->
+        <footer>
+            <ul>
+                <dev class="footer1">
+                <h2>Contact Us</h2>
+
+                <li><i class="fas fa-map-marker-alt"></i> No 123,<br> Galle Rd,<br> Nugegoda</li>
+				<li class="email-id"><i class="far fa-envelope"></i><a href="#"> dhammidresscollection@gmail.com</a></li>
+				<li><i class="fas fa-phone"></i>+94-0110975307</li>
+				<li><i class="fas fa-globe-asia"></i><a href="#"> www.dhammidresscollection.com</a></li>
+                </dev>
+                <dev class="footer2">
+                <h2 >Follow Us</h2>
+                <dev class="links">
+                <div class="fb"><li><a href="#"><i class="fab fa-facebook"></i></a></li></div>
+				<div class="fb"><li><a href="#"><i class="fab fa-twitter"></i></a></li></div>
+				<div class="inst"><li><a href="#"><i class="fab fa-instagram"></i></a></li></div>
+                </dev>
+                </dev>
+            </ul>
+        </footer>
+        <script>
+            function popupAlert(message) {
+            alert(message);
+            }
+        </script>
+    </body>
+</html>
